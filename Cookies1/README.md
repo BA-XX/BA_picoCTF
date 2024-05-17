@@ -9,6 +9,7 @@
    ```bash
    ./picoCookies1.sh
    ```
-
+<p align="center">
 ![image](https://github.com/BA-XX/BA_picoCTF/assets/85788529/d9275b89-9b4b-422d-a3f7-debf7f253055)
+</p>
 
