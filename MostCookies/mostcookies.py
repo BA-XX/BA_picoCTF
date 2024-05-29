@@ -22,8 +22,7 @@ def find_text_in_response(response, pattern):
             return True;
         else:
             print(f"No flag found")
-    else:
-        print(f"Failed to retrieve the page. Status code: {response.status_code}")
+
     return False
 
 
@@ -44,7 +43,7 @@ for name in cookie_names:
 
     # Send the GET request with cookies
     try:
-        response = requests.get(url, cookies=cookies)
+        response = requests.get(url, cookies=cookies , allow_redirects=False)
         pattern = r'picoCTF{[^ ]*}'
         if(find_text_in_response(response, pattern)): 
                 break
