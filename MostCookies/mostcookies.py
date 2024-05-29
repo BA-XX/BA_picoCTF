@@ -1,4 +1,4 @@
-from flask import Flask, session
+from flask import Flask
 from flask.sessions import SecureCookieSessionInterface
 import requests
 import re
