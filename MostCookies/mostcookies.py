@@ -20,8 +20,6 @@ def find_text_in_response(response, pattern):
         if matches:
             print("The flag is :" + matches[0])
             return True;
-        else:
-            print(f"No flag found")
 
     return False
 
